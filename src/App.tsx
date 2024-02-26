@@ -6,6 +6,7 @@ import UpMenu from "./components/UpMenu";
 import Home from "./pages/HomePage";
 import SimpleIntro from "./components/SimpleIntro";
 import FaqList from "./components/FaqList";
+import HomePagee from "./pages/HomePagee";
 
 function App() {
   const [color, setColor] = useState<string>("");
@@ -19,26 +20,11 @@ function App() {
 
   return (
     <div className="overflow-hidden">
-      <UpMenu />
 
-      <ColorContext.Provider
-        value={{
-          color: color,
-          point: point,
-          setPoint: handlePointChange,
-          setColor: handleColorChange,
-        }}
-      >
-        <SimpleIntro
-          tag="FREE TOOL"
-          heading="Facebook Video Downloader"
-          subtitle="Quickly Download HD+ Facebook Video"
-          btntext="Download Video"
-        />
-        <Home />
-      </ColorContext.Provider>
-      <FaqList />
-      <Footer />
+
+      <HomePagee />
+
+
     </div>
   );
 }

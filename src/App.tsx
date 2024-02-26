@@ -20,11 +20,7 @@ function App() {
 
   return (
     <div className="overflow-hidden">
-
-
       <HomePagee />
-
-
     </div>
   );
 }

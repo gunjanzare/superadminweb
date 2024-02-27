@@ -1,3 +1,5 @@
-export default function HomePagee(params:any) {
-    return (<div><h1>I am Home page of SuperAdmin UI</h1></div>)
+import { DashboardPage } from "./common/DashboardPage";
+
+export default function HomePagee(params: any) {
+    return (<div><DashboardPage /></div>)
 }

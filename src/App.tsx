@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <div className="overflow-hidden">
+    <div className="ml-64">
       <HomePagee />
     </div>
   );

@@ -57,8 +57,7 @@ export function SideNav(params: any) {
 
     return (
         <div>
-            <Button onClick={toggleDrawer(true)}>Open drawer</Button>
-            <Drawer open={open} onClose={toggleDrawer(false)}>
+            <Drawer variant="permanent" open={open} onClose={toggleDrawer(false)}>
                 {DrawerList}
             </Drawer>
         </div>

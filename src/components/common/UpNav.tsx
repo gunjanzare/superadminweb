@@ -16,39 +16,39 @@ import { Avatar } from "@mui/material";
 
 
 export function UpNav(params: any) {
-    return (<div className="w-full flex mt-2">
-        <div className="w-1/6" />
-        <div className="w-2/3">
-            <Box sx={{ marginRight: "10px", marginLeft: "20px" }}>
-                <FormControl fullWidth variant="outlined">
-                    <Input
-                        id="input-with-icon-adornment"
-                        placeholder="Search here…"
-                        fullWidth
-                        startAdornment={
-                            <InputAdornment position="start">
-                                <Search />
-                            </InputAdornment>
-                        }
-                    />
-                </FormControl>
-            </Box>
-        </div>
+    return (
 
-
-        <div className="2/3">
-            <div className="flex items-center justify-between w-40">
-                <div className="bg-blue-500 w-32 flex justify-between p-2 rounded-lg">
-                    <h2 className="text-white">Location</h2>
-                    <LocationIcon />
-                </div>
-                <SettingsIcon fontSize="large" />
-                <NotificationsPausedIcon fontSize="large" />
-                <Avatar sizes="60px" src={PersonIcon} />
-                <KeyboardArrowDownIcon fontSize="large" />
+        <div className="flex justify-around mt-2">
+            {/* <div className="w-1/6" /> */}
+            <div className="w-2/4">
+                <Box sx={{ marginRight: "10px", marginLeft: "20px" }}>
+                    <FormControl fullWidth variant="outlined">
+                        <Input
+                            id="input-with-icon-adornment"
+                            placeholder="Search here…"
+                            fullWidth
+                            startAdornment={
+                                <InputAdornment position="start">
+                                    <Search />
+                                </InputAdornment>
+                            }
+                        />
+                    </FormControl>
+                </Box>
             </div>
-        </div>
 
 
-    </div>)
+            <div className="">
+                <div className="flex items-center justify-between w-44">
+                    <div className="bg-blue-500 w-32 flex justify-between p-2 rounded-lg">
+                        <h2 className="text-white">Location</h2>
+                        <LocationIcon />
+                    </div>
+                    <SettingsIcon fontSize="large" />
+                    <NotificationsPausedIcon fontSize="large" />
+                    <Avatar sizes="60px" src={PersonIcon} />
+                    <KeyboardArrowDownIcon fontSize="large" />
+                </div>
+            </div>
+        </div>)
 }

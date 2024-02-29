@@ -5,11 +5,12 @@ import { SvgIconTypeMap } from '@mui/material/SvgIcon';
 interface ChipsType {
     isIcon: boolean;
     heading: string;
+    isActive: boolean;
     icon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
 }
 
 export function Chips(props: ChipsType) {
-    return <div className="w-32 p-2 rounded-lg border border-gray-600 flex justify-between shadow-lg">
+    return <div className={`p-1 ml-2 rounded-lg ${props.isActive ? `bg-blue-400` : ``} hover:bg-slate-50 border border-gray-600 flex justify-between items-center shadow-lg`}>
         {props.isIcon && <props.icon />}
-        <h2 className='text-black'>Weekly</h2></div>
+        <h2 className={`${props.isActive ? `text-white` : `text-black`} text-xs`}>{props.heading}</h2></div>
 }

@@ -3,7 +3,7 @@ import { LaedsCard } from "./LeadsCard";
 import { RevenueCard } from "./RevenueCard";
 
 export function DataLayout(params: any) {
-    return <div className="flex justify-between mt-10">
+    return <div className="flex justify-evenly mt-10">
         <DataEnquiryCard />
         <LaedsCard />
         <RevenueCard />

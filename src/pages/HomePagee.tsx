@@ -16,9 +16,8 @@ export default function HomePagee(params: any) {
         <SideNav />
         <TabLayout />
         <TotalPartyLayout />
-        <Chips isIcon={true} heading={"Monthly"} icon={CalendarMonthIcon} />
-        <Chips isIcon={false} heading={"Weekly"} icon={CalendarMonthIcon} />
-        {/* <DataLayout /> */}
+
+        <DataLayout />
         <PartyTab />
     </div>)
 }
